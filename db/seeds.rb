@@ -7,3 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'open-uri'
+
+User.destroy_all
+
+user1 = User.create!(
+  username: 'avataraang',
+  password: 'password123456'
+)
+
+user2 = User.create!(
+  username: 'demo123',
+  password: '123456'
+)
