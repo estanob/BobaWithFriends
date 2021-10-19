@@ -1,9 +1,11 @@
 import React from 'react';
 
-export default Splash = () => {
+const Splash = () => {
   return (
     <div>
       <h1>Hello World</h1>
     </div>
   )
 }
+
+export default Splash
