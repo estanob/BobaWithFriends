@@ -3,6 +3,7 @@ import { logout } from '../../actions/session_actions';
 import Navbar from './navbar';
 
 const mSTP = state => {
+  debugger
   return {
     session: state.session.id,
   };

@@ -4,6 +4,16 @@ import { Link, NavLink } from 'react-router-dom';
 const Navbar = props => {
   const { session, logout } = props;
 
+  function loggedIn () {
+    if (session) {
+      return (
+        <div>
+          <button onClick={logout}>Log Out</button>
+        </div>
+      )
+    }
+  }
+  
   return (
     <div className="header-navbar">
       <div className="navbar-links">
@@ -12,6 +22,7 @@ const Navbar = props => {
           <a href="#">Boba Times</a>
           <a href="#">Hosting</a>
         </div>
+        {loggedIn()}
       </div>
     </div>
   )
