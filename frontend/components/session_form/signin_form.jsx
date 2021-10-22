@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const SigninForm = props => {
   const [user, setUser] = useState({username: "", password: ""});
-  let { login, signup } = props;
+  let { login } = props;
 
-  const submitHandler = (e) => {
+  function submitHandler (e) {
     e.preventDefault()
     login(user);
   }
@@ -34,7 +34,7 @@ const SigninForm = props => {
         <input type="submit" value="SIGN IN"/>
       </form>
       <br />
-      <button>If you've never signed up before, click here</button>
+      <Link to="/signup">If you've never signed up before, click here</Link>
       <button>Demo User</button>
     </div>
   );

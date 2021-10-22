@@ -6,7 +6,6 @@ import SignUpForm from './signup_form';
 const mSTP = ({ errors }) => {
   return {
     // errors: Object.values(errors.session),
-    formType: 'signup',
   };
 };
 

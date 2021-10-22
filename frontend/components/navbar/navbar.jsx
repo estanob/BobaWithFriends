@@ -13,6 +13,17 @@ const Navbar = props => {
       )
     }
   }
+
+  function loggedOut () {
+    if (!session) {
+      return (
+        <div>
+          <Link to="/signin">Sign In</Link>
+          <Link to="/signup">Sign Up</Link>
+        </div>
+      )
+    }
+  }
   
   return (
     <div className="header-navbar">
@@ -23,6 +34,7 @@ const Navbar = props => {
           <a href="#">Hosting</a>
         </div>
         {loggedIn()}
+        {loggedOut()}
       </div>
     </div>
   )
