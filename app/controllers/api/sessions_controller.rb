@@ -6,12 +6,13 @@ class Api::SessionsController < ApplicationController
       params[:user][:username],
       params[:user][:password]
     )
-    
     if @user
+    
       login(@user)
       render :show
     else
       render json: ['Invalid username or password'], status: 422
+      # render json: @session.errors.full_messages, status: 422
     end
   end
 

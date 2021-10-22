@@ -17,6 +17,8 @@ const App = () => {
         <NavbarContainer />
       </header>
       <Switch>
+        {/* <ProtectedRoute path="/bobatimes" component={} /> */}
+        
         <AuthRoute path="/signin" component={SignInFormContainer} />
         <AuthRoute path="/signup" component={SignUpFormContainer} />
         

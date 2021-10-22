@@ -4,9 +4,9 @@ import { clearErrors, demoLogin, login } from '../../actions/session_actions';
 import SignInForm from './signin_form';
 
 const mSTP = ({ errors }) => {
+  debugger
   return {
     // errors: Object.values(errors.session),
-    formType: 'login',
   };
 };
 

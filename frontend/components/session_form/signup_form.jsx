@@ -27,11 +27,12 @@ const SignupForm = props => {
           name="password" 
           value={user.password}
           onChange={e => setUser({...user, password: e.target.value})} 
-          placeholder="Password" 
+          placeholder="Password (at least 6 characters you won't forget)" 
           className="signin-input" />
-        <input type="submit" value="SIGN UP"/>
+        <input type="submit" value="LET'S GET BOBA"/>
       </form>
       <button onClick={demoLogin}>Demo User</button>
+      <Link to="/signin">If you've already done this before, click here to log in</Link>
     </div>
   );
 };
