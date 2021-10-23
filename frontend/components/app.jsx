@@ -25,7 +25,7 @@ const App = () => {
         <AuthRoute exact path="/" component={Splash} />
       </Switch>
       <footer>
-        <a href="https://www.linkedin.com/in/estanob/">Linkedin</a>
+        <a href="https://www.linkedin.com/in/estanob/">LinkedIn</a>
         <a href="https://github.com/estanob">Github</a>
       </footer>
     </div>
