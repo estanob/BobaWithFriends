@@ -7,6 +7,17 @@ body {
 }
  
 footer {
-  position: absolute;
+  display: flex;
+  position: relative;
   bottom: 0;
+}
+
+.footer-links {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info {
+  width: 65%;
 }

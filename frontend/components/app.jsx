@@ -24,11 +24,16 @@ const App = () => {
         <AuthRoute path="/signup" component={SignUpFormContainer} />
         
         <Route exact path="/boba_times" component={BobaTimesContainer} />
-        <AuthRoute exact path="/" component={Splash} />
+        <Route exact path="/" component={Splash} />
       </Switch>
       <footer>
-        <a href="https://www.linkedin.com/in/estanob/">LinkedIn</a>
-        <a href="https://github.com/estanob">Github</a>
+        <div className="footer-links">
+          <a href="https://www.linkedin.com/in/estanob/">LinkedIn</a>
+          <a href="https://github.com/estanob">Github</a>
+        </div>
+        <div className="footer-info">
+          <p>Tea With Strangers is all about making our cities feel more like neighborhoods. We're more "connected" than ever before, but we're also more alone. And all we want to do is bring people together because, well, the world is better that way. <br /> We're not doing anything groundbreaking. We're creating something that would've been incredibly unnecessary 20 years ago. But while we get busier, it's easy to forget the value of a conversation for no reason. A conversation that's intentionally unintentional.</p>
+        </div>
       </footer>
     </div>
   )

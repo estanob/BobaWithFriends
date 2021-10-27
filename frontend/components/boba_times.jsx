@@ -2,7 +2,7 @@ import React from 'react';
 
 const BobaTimes = props => {
   let { theMonths, currentMonth } = props;
-  const theMonth = theMonth[currentMonth + 1];
+  const theMonth = theMonths[currentMonth + 1];
   console.log("Current Month:", currentMonth)
   console.log("Boba Times Props:", props)
   return (

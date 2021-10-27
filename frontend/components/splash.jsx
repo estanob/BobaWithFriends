@@ -22,6 +22,21 @@ const Splash = () => {
           <p>That's it. No strings attached.</p>
         </div>
       </div>
+      <div className="why-boba">
+        <h1>So why are thousands of people doing it?</h1>
+        <div>
+          <h2>It's awesome</h2>
+          <p>Everyone at boba time is stepping a little out of their comfort zone. This makes it so much easier to actually learn something unexpected about the people around you. Because open minds are a prerequisite around here.</p>
+        </div>
+        <div>
+          <h2>We won't meet otherwise</h2>
+          <p>In all likelihood, our paths won’t cross for any reason. So often, we only meet people through work, school, or friends of friends. And even then, it’s questionable. So basically, we manufacture serendipity.</p>
+        </div>
+        <div>
+          <h2>Make new friends!</h2>
+          <p>And friends make everything better! Real humans are so much cooler than their Facebook or Instagram pictures. Boba time has real humans! #nofilter!</p>
+        </div>
+      </div>
     </div>
   )
 }
