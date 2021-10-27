@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Splash = () => {
   return (
@@ -6,7 +7,7 @@ const Splash = () => {
       <div className="splash-intro">
         <h1>Everyone can be a Friend</h1>
         <p>But you don't meet them when you're just at home looking at the screen all day!</p>
-        <button className="signin-button">Let's Get Boba</button>
+        <Link to="/boba_times" className="signin-button">Let's Get Boba</Link>
       </div>
       <div className="splash-explanation">
         <div>

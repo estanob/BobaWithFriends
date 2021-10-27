@@ -30,7 +30,7 @@ const Navbar = props => {
       <div className="navbar-links">
         <a href="#">Boba With Friends</a>
         <div className="navbar-right-side">
-          <a href="#">Boba Times</a>
+          <Link to="/boba_times">Boba Times</Link>
           <a href="#">Hosting</a>
         </div>
         {loggedIn()}
